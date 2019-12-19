@@ -1,0 +1,77 @@
+.editor-wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font{
+    margin: 0 20px;
+  }
+  .leftLine{
+    width: 95px;
+    height: 39px;
+    transform: rotateY(180deg);
+    .bar-top{
+      width: 100%;
+      height: 50%;
+      background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 3%, rgb(67, 101, 243) 100%);
+    }
+    .bar-bottom{
+      width: 60.85%;
+      height: 50%;
+      background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 3%, rgb(67, 101, 243) 100%);
+    }
+  }
+  .rightLine{
+    width: 95px;
+    height: 39px;
+    .bar-top{
+      width: 100%;
+      height: 50%;
+      background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 3%, rgb(67, 101, 243) 100%);
+    }
+    .bar-bottom{
+      width: 60.85%;
+      height: 50%;
+      background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 3%, rgb(67, 101, 243) 100%);
+    }
+  }
+}
+
+.clock{
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font{
+    margin-right: 30px
+  }
+}
+
+.cardData{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .cardBox{
+    width: calc((100% - 80px)/5);
+    padding: 25px 0;
+    background: rgba(65, 99, 239, 0.16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .boxTitle{
+      color: #fff;
+      font-size: 16px;
+    }
+    .boxNum{
+      color: #3ec7ff;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+}

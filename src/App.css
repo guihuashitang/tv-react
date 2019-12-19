@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.scale-box{
+  transform-origin: 0 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: 0.3s;
+  background: #09d3ac;
+  text-align: center;
+  color: #333;
+  background-image: url('./assets/images/bg.png');
+  background-size: 100% 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.dropable{
+  position: relative;
+}
+
+.content-main{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 18px 24px;
+  height: calc(100vh - 64px);
+  
+}
+
+*{
+  box-sizing: border-box;
+}
