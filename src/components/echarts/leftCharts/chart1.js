@@ -161,7 +161,7 @@ class Antv extends React.Component {
       if(idx >= this.state.data2.length){
         idx = 0;
       }
-    },1000)
+    },2000)
   }
 
   setChart3() {
