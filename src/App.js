@@ -69,7 +69,6 @@ class App extends React.Component{
   //sdsds
   //aaa
   //bbb
-  //ccc
   render() {
     const {width=1920, height=1080, children='12322222222222'} = this.props
     const {scale} = this.state
