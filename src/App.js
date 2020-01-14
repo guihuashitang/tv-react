@@ -31,7 +31,6 @@ class App extends React.Component{
     document.getElementById('dropable').onselectstart = function (evt) {
       evt.preventDefault();
     };
-
   }
 
   getScale=() => {

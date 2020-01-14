@@ -38,7 +38,6 @@ class Echarts extends React.Component{
           <Map></Map>
           <Table></Table>
         </div>
-        
       </div>
     )
   }

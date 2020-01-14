@@ -1,6 +1,7 @@
 import React from 'react';
 import echarts from "echarts";
 import '../../../../node_modules/echarts/map/js/world.js'
+// import 'echarts/lib/chart/map';
 import './map.css'
 
 

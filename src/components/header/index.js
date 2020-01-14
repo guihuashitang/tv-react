@@ -13,6 +13,11 @@ class FullScree extends React.Component{
     }
   }
 
+  componentDidMount() {
+    console.log(this.props)
+  }
+
+
   handClick = () => {
     // document.documentElement.requestFullscreen() 
     let fullarea = document.getElementById('dropable')
