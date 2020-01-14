@@ -66,6 +66,7 @@ class App extends React.Component{
   isfull=()=>{
     return !!(document.webkitIsFullScreen || this.fullele());
   }
+  
 
   render() {
     const {width=1920, height=1080, children='12322222222222'} = this.props
