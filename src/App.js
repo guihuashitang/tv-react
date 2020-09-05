@@ -35,18 +35,20 @@ class App extends React.Component{
 
   getScale=() => {
     const {width=1920, height=1080} = this.props
+    
     if(this.isfull()){
       var innerWidth = window.innerWidth
       var innerHeight = window.innerHeight
     }else{
-      var innerWidth = window.innerWidth>=1504?1480:window.innerWidth-48
-      var innerHeight = window.innerWidth>=1504?832:window.innerHeight
+      // var innerWidth = window.innerWidth>=1504?1480:window.innerWidth-48
+      // var innerHeight = window.innerWidth>=1504?832:window.innerHeight
+      var innerWidth = window.innerWidth>1920?1920:window.innerWidth*0.9
+      var innerHeight = window.innerWidth>1920?1080:window.innerHeight*0.9
     }
     
     let ww=innerWidth/width
     let wh=innerHeight/height
-    console.log(ww,wh)
-    return ww<wh?ww: wh
+    return ww<=wh?ww: wh
   }
 
   setScale = debounce(() => {
@@ -76,7 +78,7 @@ class App extends React.Component{
       <Layout style={{ height: '100vh'}}>
         <FullScree></FullScree>
         <Content className="content-main">
-          <div id="dropable" className='dropable' style={{width: '1480px',height: '832px'}}>
+          <div id="dropable" className='dropable' style={{width: '1920px',height: '1080px'}}>
             <div
               className="scale-box"
               style={{
