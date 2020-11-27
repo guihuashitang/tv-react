@@ -1,9 +1,10 @@
 import React from 'react';
-import debounce from './utils/debounce.js'
+import debounce from './utils/debounce.js';
 import './App.css';
-import FullScree from './components/header'
+import FullScree from './components/header';
 import { Layout } from "antd";
-import Echarts from './components/echarts'
+import Echarts from './components/echarts';
+import {connect} from 'react-redux';
 
 
 
@@ -23,9 +24,10 @@ class App extends React.Component{
     }
   }
   componentDidMount() {
+    console.log('props',this.props)
     this.setScale()
     window.addEventListener('resize', this.setScale)
-    document.getElementById('dropable').oncontextmenu = function (evt) {
+    document.getElementById('dropable').oncontextmenu = function (evt) { 
       evt.preventDefault();
     };
     document.getElementById('dropable').onselectstart = function (evt) {
@@ -81,7 +83,7 @@ class App extends React.Component{
           <div id="dropable" className='dropable' style={{width: '1920px',height: '1080px'}}>
             <div
               className="scale-box"
-              style={{
+              style={{  
                 transform: `scale(${scale}) translate(-50%, -50%)`,
                 WebkitTransform: `scale(${scale}) translate(-50%, -50%)`,
                 width,
@@ -98,4 +100,9 @@ class App extends React.Component{
 }
 
 
-export default App;
+export default connect(state => ({
+  addName:state.addName,
+}))(App);
+
+// export default App;
+
