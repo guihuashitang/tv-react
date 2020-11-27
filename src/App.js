@@ -90,6 +90,7 @@ class App extends React.Component{
                 height
               }} 
             >
+              
               <Echarts></Echarts>
             </div>
           </div>
