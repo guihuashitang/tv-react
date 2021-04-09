@@ -106,6 +106,6 @@ export default connect(state => ({
 }))(App);
 
 
-//1
+//1 2
 // export default App;
 
