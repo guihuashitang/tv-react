@@ -105,5 +105,7 @@ export default connect(state => ({
   addName:state.addName,
 }))(App);
 
+
+//1
 // export default App;
 
